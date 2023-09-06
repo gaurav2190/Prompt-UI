@@ -1,7 +1,7 @@
 export async function POST(req:Request) {
     const body = await req.json();
     console.log('req....'+body);
-    const response = await fetch("https://gpt-api-ly2q.onrender.com/GetPlan", {
+    const response = await fetch(process.env.APIURL+"/GetPlan", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
