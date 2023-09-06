@@ -10,11 +10,11 @@ export default function Home() {
   const [time, setTime] = useState<string>('');
   const [isloading, setIsLoading] = useState<boolean>(false);
 
-  const handleGoalChange = async (e) => {
+  const handleGoalChange = async (e:any) => {
     setGoal(e.target.value);
   }
 
-  const handleTimeChange = async (e) => {
+  const handleTimeChange = async (e:any) => {
     setTime(e.target.value);
   }
 
