@@ -70,7 +70,7 @@ export default function Home() {
         <textarea name='prompt-goal-value' id='prompt-goal-value' className='w-3/4 h-36 border-4' placeholder='Enter goal' onChange={handleGoalChange}></textarea>
         <div className="z-10 w-2/3 items-center justify-center font-mono lg:flex m-auto">
           <Input name='prompt-time-value' id='prompt-time-value' className='w-32 border-4' placeholder='Enter time' onChange={handleTimeChange}></Input>
-          <Button type="submit" className='text-primary-blue rouded-full bg-slate-500 min-w-[130px] m-7' disabled={isloading}>Get Plan</Button>
+          <Button type="submit" className='rouded-full bg-slate-500 min-w-[130px] m-7 text-white' disabled={isloading}>Get Plan</Button>
         </div>
       </form>      
     </main>
